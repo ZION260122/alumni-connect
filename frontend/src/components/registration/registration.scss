@@ -1,3 +1,5 @@
+body{
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);}
 .registration-container {
   display: flex;
   flex-direction: column;
@@ -13,9 +15,9 @@
 
   h2 {
     margin-bottom: 1rem;
-    color: grey;
+    color: black;
+    background-color: #f9f9f9 ;
   }
-
 
 }
 
@@ -24,6 +26,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #f9f9f9 ;
 }
 
 .registration-form {
@@ -34,6 +37,7 @@
   height: 100%;
   padding: 10px;
   border-radius: 10px;
+  background-color: #f9f9f9 ;
 
   &__group {
     display: flex;
@@ -41,13 +45,25 @@
     justify-content: space-between;
     margin-bottom: 1rem;
     width: 100%;
+    background-color: #f9f9f9 ;
 
     button {
-        border: 1px solid red;
+        border: 1px solid palegreen;
         width: 30%;
         align-items: center;
         margin-left: 35%;
+        background-color: #f9f9f9 ;
       }
+
+      button:hover{
+        transition: 0.3s;
+        background-color: palegreen;
+      }
+
+      
+button:focus{
+    background-color: green;
+}
 
 
   }
@@ -57,12 +73,19 @@
     width: 20rem;
     height: 3rem;
     border-radius: 10px;
-    border: 1px solid whitesmoke;
+    border: 1px solid palegreen;
+    background-color: #f9f9f9 ;
   }
 
   label {
     margin-bottom: 0.5rem;
     font-weight: bold;
+    background-color: #f9f9f9 ;
   }
+
+  label:hover{
+
+  }
+
 
 }

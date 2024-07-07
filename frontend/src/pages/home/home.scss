@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+.home-container {
+  width: 100%;
+  height: 100rem;
+  font-family: "Roboto Mono", "sans-serif";
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: row;
+  width: 100%;
+
+  &__leftsidebar {
+    display: flex;
+    justify-content: column;
+    width: 15rem;
+
+    &__profile {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 0.3rem;
+      padding-top: 3rem;
+      width: 100%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      height: 50vh;
+      border-radius: 10px;
+
+      img {
+        border-radius: 100%;
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+      .about {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        color: black;
+        align-items: center;
+        font-size: 1rem;
+
+        justify-content: center;
+        h3 {
+          font-weight: 600;
+          margin: 1rem;
+        }
+        h5 {
+          font-weight: 400;
+          margin-bottom: 1rem;
+        }
+        p {
+          font-weight: 400;
+          max-width: 90%;
+        }
+      }
+
+      .horizontalseparator{
+        height: 0;
+        width: 100%;
+        border: 0.01px solid rgb(148, 145, 145);
+        margin-bottom: 2px;
+      }
+      .profilestatus {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 5px;
+        padding: 2px;
+        font-size: 0.7rem;
+          h3 {
+            margin-bottom: 10px;
+          }
+
+          h3:hover{
+            cursor: pointer;
+          }
+
+        .followers {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .verticalseparator{
+            height: 100%;
+            width: 0;
+            border: 0.5px solid gray;
+        }
+        .following {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      .profilelink{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 5px;
+        a{
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        a:hover{
+            color: grey;
+        }
+        a:focus{
+            color: black;
+        }
+      }
+
+    }
+  }
+  &__middlesidebar {
+    display: flex;
+    justify-content: column;
+    width: 3rem;
+    height: 100%;
+    border: 1px solid black;
+  }
+  &__rightsidebar {
+    display: flex;
+    justify-content: column;
+    width: 3rem;
+    height: 100%;
+
+  }
+}
