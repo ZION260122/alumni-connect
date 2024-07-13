@@ -6,6 +6,7 @@ import { IoIosChatbubbles } from "react-icons/io";
 import { IoIosNotifications } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa";
 import { PiDotsNineBold } from "react-icons/pi";
+import { Box, Button, Flex, Image } from "@chakra-ui/react";
 
 const Header = () => {
   return (
@@ -18,9 +19,9 @@ const Header = () => {
                 <p>Alumni-Connect</p>
               </div>
               <div className="searchbar">
-                <input 
-                type="text"
-                placeholder={ "Search for connections, alumni, and more..."}
+                <input
+                  type="text"
+                  placeholder={"Search for connections, alumni, and more..."}
                 />
               </div>
             </div>
@@ -41,17 +42,17 @@ const Header = () => {
                 <IoIosNotifications />
               </div>
               <div className="profilebtn">
-                <button>
-                     <div className="img">
-                  {/* <img src="..\src\assets\profile.png" alt="img" /> */}
-                </div>
-                <div className="scrollbtn">
-                  <FaAngleDown />
-                </div>
-
-                </button>
-               
-                
+                <Button bg="white" color="black" width="30px" gap={2}>
+                   <Image
+                      src="..\src\assets\profile.png"
+                      alt="M"
+                      objectFit={"cover"}
+                      height= "20px"
+                      width="20px"
+                      borderRadius={"50%"}
+                    />
+                  <div className="scrollbtn"><FaAngleDown /></div>
+                </Button>
               </div>
               <div className="etcbtn">
                 <PiDotsNineBold />
