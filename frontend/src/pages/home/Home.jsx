@@ -3,7 +3,7 @@ import "./home.scss";
 
 const Home = () => {
   return (
-    <Box h="100vh" p={4}>
+    <Box h="100vh" marginRight={"8rem"} marginLeft={"8rem"}  mt={"2rem"} bg={"gray.100"} p={4}>
       <Flex justifyContent="space-between" h="100%">
         <Flex alignItems={"left"}>
           <Flex
@@ -77,7 +77,7 @@ const Home = () => {
             </Flex>
             </Flex>
             <Flex paddingRight={4}>
-            <Button
+            {/* <Button
               fontWeight={600}
               bg="gray.light"
               color="white"
@@ -88,7 +88,7 @@ const Home = () => {
                 border: "1px solid black",
               }}
             >              Post
-            </Button>
+            </Button> */}
             </Flex>
 
           </Flex>
